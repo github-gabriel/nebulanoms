@@ -1,0 +1,38 @@
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 70%;
+    border-radius: 25px;
+    border: 2px solid black;
+
+    margin: auto;
+}
+
+#product-info {
+    font-family: "Better World";
+    font-size: 2rem;
+}
+
+#product-image {
+    padding: 25px;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Hier wird die maximale Breite für den Container festgelegt */
+    .product-container {
+        flex-direction: column;
+        /* Ändert das Flex-Layout auf eine vertikale Ausrichtung */
+        align-items: center;
+    }
+
+    #product-info {
+        margin-top: 25px;
+        /* Fügt einen oberen Abstand hinzu,
+        um den Text vom Bild zu trennen */
+    }
+
+}
