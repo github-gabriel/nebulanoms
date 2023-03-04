@@ -1,0 +1,31 @@
+.basic-grid {
+    display: grid;
+    grid-gap: 0;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    border: 1px solid black;
+
+    font-family: "Hyper Blob";
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+section {
+    width: 100%;
+}

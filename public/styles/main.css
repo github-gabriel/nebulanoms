@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Hyper Blob Outline";
+    src: url("../assets/fonts/hyper-blob/HyperBlobOutline-OVj6o.ttf");
+}
+
+@font-face {
+    font-family: "Hyper Blob";
+    src: url("../assets/fonts/hyper-blob/HyperBlob-ZVj6l.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hyper Blob Outline";
+    background: rgb(237, 209, 255);
+    background: linear-gradient(90deg, rgba(237, 209, 255, 1) 0%, rgba(248, 190, 255, 1) 30%, rgba(191, 216, 255, 1) 70%, rgba(133, 127, 201, 1) 100%);
+}
+
+nav {
+    background-color: #C187BE;
+    height: 120px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 60px;
+    line-height: 120px;
+    padding: 0 60px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 115px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #a678a3;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 35px;
+    color: white;
+    float: right;
+    line-height: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 40px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #857FC9;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~nav ul {
+        left: 0;
+    }
+}
