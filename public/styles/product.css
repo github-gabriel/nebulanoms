@@ -18,6 +18,8 @@
 
 #product-image {
     padding: 25px;
+    max-width: 80%;
+    height: auto;
 }
 
 @media screen and (max-width: 900px) {

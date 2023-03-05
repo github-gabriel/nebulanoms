@@ -2,7 +2,15 @@
     display: grid;
     grid-gap: 0;
 
+    padding: 0;
+
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media (max-width: 350px) {
+    .basic-grid {
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
 }
 
 .item {
@@ -13,8 +21,6 @@
     font-size: 2rem;
     overflow: hidden;
     cursor: pointer;
-    box-sizing: border-box;
-    padding: 0;
     border: 1px solid black;
 
     font-family: "Better World";
@@ -24,7 +30,8 @@
 }
 
 .item img {
-    width: 90%;
+    width: 100%;
+    height: auto;
 }
 
 .price {
